@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/MultiCall.sol": "Create2Factory"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/MultiCall.sol": {
+			"keccak256": "0x30b946ed9212b85b1e99b6b43abab924014a652ec6c72ff26faee79aaea80b78",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6bf07c2b98918bccaebe0aaa8a9a1012bb416a851f569b8272b280c91862237b",
+				"dweb:/ipfs/QmQ2ztCxgFxhyaYjSqwubZF6c1aPz9PndNPooK3oLuyKpP"
+			]
+		}
+	},
+	"version": 1
+}

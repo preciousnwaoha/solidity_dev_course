@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/MultiCall.sol": "TestMultiC"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/MultiCall.sol": {
+			"keccak256": "0x73172a140a6d6841a81f2ccc5a69d29a2b26988127f39b0ca69f5956f2ab1d15",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8394e12705ea9d75d03bd32e3f1510c5e56780fc571a8b5196abaf31accf90aa",
+				"dweb:/ipfs/QmUova8DFhFx3HfXL5XPtXfBTgdP6496So2Zpy1RznHg2V"
+			]
+		}
+	},
+	"version": 1
+}
