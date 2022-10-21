@@ -1,0 +1,325 @@
+{
+	"id": "b1b45c90fc7974abf98af079e9e9df63",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.7",
+	"solcLongVersion": "0.8.7+commit.e28d00a7",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/AccessControl.sol": {
+				"content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.3;\r\n\r\n/*\r\nThis Contract will Manage Roles of accounts:\r\ndepending on their role accounts would be able to call functions\r\n*/\r\ncontract AccessControl {\r\n    // role => account \r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"contracts/AccessControl.sol": {
+				"AccessControl": {
+					"abi": [],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"contracts/AccessControl.sol\":180:232  contract AccessControl {\r... */\n  mstore(0x40, 0x80)\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"contracts/AccessControl.sol\":180:232  contract AccessControl {\r... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa2646970667358221220dad590e8ca11207e86d1fb3404b050eda9e0f84829cbd1b749413440c17b784464736f6c63430008070033\n}\n",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220dad590e8ca11207e86d1fb3404b050eda9e0f84829cbd1b749413440c17b784464736f6c63430008070033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xDA 0xD5 SWAP1 0xE8 0xCA GT KECCAK256 PUSH31 0x86D1FB3404B050EDA9E0F84829CBD1B749413440C17B784464736F6C634300 ADDMOD SMOD STOP CALLER ",
+							"sourceMap": "180:52:0:-:0;;;;;;;;;;;;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea2646970667358221220dad590e8ca11207e86d1fb3404b050eda9e0f84829cbd1b749413440c17b784464736f6c63430008070033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xDA 0xD5 SWAP1 0xE8 0xCA GT KECCAK256 PUSH31 0x86D1FB3404B050EDA9E0F84829CBD1B749413440C17B784464736F6C634300 ADDMOD SMOD STOP CALLER ",
+							"sourceMap": "180:52:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "66",
+								"totalCost": "12666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 180,
+									"end": 232,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 180,
+									"end": 232,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 180,
+									"end": 232,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 180,
+									"end": 232,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 180,
+									"end": 232,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 180,
+									"end": 232,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 180,
+									"end": 232,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 180,
+									"end": 232,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 180,
+									"end": 232,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 180,
+									"end": 232,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 180,
+									"end": 232,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 180,
+									"end": 232,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 180,
+									"end": 232,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 180,
+									"end": 232,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 180,
+									"end": 232,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 180,
+									"end": 232,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 180,
+									"end": 232,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 180,
+									"end": 232,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 180,
+									"end": 232,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 180,
+									"end": 232,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 180,
+									"end": 232,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a2646970667358221220dad590e8ca11207e86d1fb3404b050eda9e0f84829cbd1b749413440c17b784464736f6c63430008070033",
+									".code": [
+										{
+											"begin": 180,
+											"end": 232,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 180,
+											"end": 232,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 180,
+											"end": 232,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 180,
+											"end": 232,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 180,
+											"end": 232,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 180,
+											"end": 232,
+											"name": "REVERT",
+											"source": 0
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/AccessControl.sol\":\"AccessControl\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/AccessControl.sol\":{\"keccak256\":\"0x2a6103fd878990a7081773e164afe6a22fca0806e1515bbcac378470f32712c5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://65bce17d4fa5625c10b575cefe68c149976ac4ce4e4e995278c0d055aefe20d1\",\"dweb:/ipfs/QmdEo16MkT6H1DGaMeaWHqa4c527SMRMYvSEgLXS6Z93ps\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"contracts/AccessControl.sol": {
+				"ast": {
+					"absolutePath": "contracts/AccessControl.sol",
+					"exportedSymbols": {
+						"AccessControl": [
+							2
+						]
+					},
+					"id": 3,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".3"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "33:23:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 2,
+							"linearizedBaseContracts": [
+								2
+							],
+							"name": "AccessControl",
+							"nameLocation": "189:13:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [],
+							"scope": 3,
+							"src": "180:52:0",
+							"usedErrors": []
+						}
+					],
+					"src": "33:199:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/DeligateCall.sol": "TestDelegateC"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/DeligateCall.sol": {
+			"keccak256": "0xc64f11ebd8e512f1de3df3c9bb23371952bf8c8505ed1d4d154e6d6ce5de050b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://17480c3c7dec390937cff29b97620f3ed60460b0b4b2c995a75d5ceea6e9c517",
+				"dweb:/ipfs/QmS9dmS9jbeVG5sH75i4RXUE12n9gShytHL91Bh72VV3Ya"
+			]
+		}
+	},
+	"version": 1
+}

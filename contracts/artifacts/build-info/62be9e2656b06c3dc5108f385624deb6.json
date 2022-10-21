@@ -1,0 +1,325 @@
+{
+	"id": "62be9e2656b06c3dc5108f385624deb6",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.7",
+	"solcLongVersion": "0.8.7+commit.e28d00a7",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/Sig.sol": {
+				"content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.3;\r\n\r\n/*\r\n0. message to sign\r\n1. hash(message)\r\n2. sign(hash(message), private key) | offchain\r\n3. e\r\n*/\r\n\r\ncontract Sig {\r\n    \r\n}\r\n\r\n\r\n"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"contracts/Sig.sol": {
+				"Sig": {
+					"abi": [],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"contracts/Sig.sol\":162:185  contract Sig {\r... */\n  mstore(0x40, 0x80)\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"contracts/Sig.sol\":162:185  contract Sig {\r... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa2646970667358221220d23aa023a000e10d6e9bb1d1b04666b863d4e71b4cf512bda9627f463ffe880164736f6c63430008070033\n}\n",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220d23aa023a000e10d6e9bb1d1b04666b863d4e71b4cf512bda9627f463ffe880164736f6c63430008070033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xD2 GASPRICE LOG0 0x23 LOG0 STOP 0xE1 0xD PUSH15 0x9BB1D1B04666B863D4E71B4CF512BD 0xA9 PUSH3 0x7F463F INVALID DUP9 ADD PUSH5 0x736F6C6343 STOP ADDMOD SMOD STOP CALLER ",
+							"sourceMap": "162:23:0:-:0;;;;;;;;;;;;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea2646970667358221220d23aa023a000e10d6e9bb1d1b04666b863d4e71b4cf512bda9627f463ffe880164736f6c63430008070033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xD2 GASPRICE LOG0 0x23 LOG0 STOP 0xE1 0xD PUSH15 0x9BB1D1B04666B863D4E71B4CF512BD 0xA9 PUSH3 0x7F463F INVALID DUP9 ADD PUSH5 0x736F6C6343 STOP ADDMOD SMOD STOP CALLER ",
+							"sourceMap": "162:23:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "66",
+								"totalCost": "12666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 162,
+									"end": 185,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 162,
+									"end": 185,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 162,
+									"end": 185,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 162,
+									"end": 185,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 162,
+									"end": 185,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 162,
+									"end": 185,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 162,
+									"end": 185,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 162,
+									"end": 185,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 162,
+									"end": 185,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 162,
+									"end": 185,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 162,
+									"end": 185,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 162,
+									"end": 185,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 162,
+									"end": 185,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 162,
+									"end": 185,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 162,
+									"end": 185,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 162,
+									"end": 185,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 162,
+									"end": 185,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 162,
+									"end": 185,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 162,
+									"end": 185,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 162,
+									"end": 185,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 162,
+									"end": 185,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a2646970667358221220d23aa023a000e10d6e9bb1d1b04666b863d4e71b4cf512bda9627f463ffe880164736f6c63430008070033",
+									".code": [
+										{
+											"begin": 162,
+											"end": 185,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 162,
+											"end": 185,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 162,
+											"end": 185,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 162,
+											"end": 185,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 162,
+											"end": 185,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 162,
+											"end": 185,
+											"name": "REVERT",
+											"source": 0
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/Sig.sol\":\"Sig\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/Sig.sol\":{\"keccak256\":\"0xd578b41deadf3508def35d0a035af5f24f4f188aeb6aa005b4213eff9591cbc8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://309550a1f93132d41cdd06de7efd61dc46d7407ceea8364b06a15f878d2c87a4\",\"dweb:/ipfs/QmRAXwSCAqEY9MtX7NWqV6iEofyU7eWnVYr79ycxFHUayh\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"contracts/Sig.sol": {
+				"ast": {
+					"absolutePath": "contracts/Sig.sol",
+					"exportedSymbols": {
+						"Sig": [
+							2
+						]
+					},
+					"id": 3,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".3"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "33:23:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 2,
+							"linearizedBaseContracts": [
+								2
+							],
+							"name": "Sig",
+							"nameLocation": "171:3:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [],
+							"scope": 3,
+							"src": "162:23:0",
+							"usedErrors": []
+						}
+					],
+					"src": "33:158:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

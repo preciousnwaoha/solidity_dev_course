@@ -1,0 +1,325 @@
+{
+	"id": "1ff546cdfe2ac1fbeb27d9614e7cd359",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.7",
+	"solcLongVersion": "0.8.7+commit.e28d00a7",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/Hash.sol": {
+				"content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.3;\r\n\r\n/*\r\nHash Functions are widely used in solidity.\r\nSome of the use cases are:\r\n1. Sign a signature\r\n2. \r\n*/\r\n\r\ncontract HashFunc {\r\n    \r\n}\r\n\r\n\r\n"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"contracts/Hash.sol": {
+				"HashFunc": {
+					"abi": [],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"contracts/Hash.sol\":169:197  contract HashFunc {\r... */\n  mstore(0x40, 0x80)\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"contracts/Hash.sol\":169:197  contract HashFunc {\r... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa2646970667358221220bf66ac2566d346d2c094d99775caee125a98d7a0a03df7e3d1b56c29ebe4796f64736f6c63430008070033\n}\n",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220bf66ac2566d346d2c094d99775caee125a98d7a0a03df7e3d1b56c29ebe4796f64736f6c63430008070033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xBF PUSH7 0xAC2566D346D2C0 SWAP5 0xD9 SWAP8 PUSH22 0xCAEE125A98D7A0A03DF7E3D1B56C29EBE4796F64736F PUSH13 0x63430008070033000000000000 ",
+							"sourceMap": "169:28:0:-:0;;;;;;;;;;;;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea2646970667358221220bf66ac2566d346d2c094d99775caee125a98d7a0a03df7e3d1b56c29ebe4796f64736f6c63430008070033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xBF PUSH7 0xAC2566D346D2C0 SWAP5 0xD9 SWAP8 PUSH22 0xCAEE125A98D7A0A03DF7E3D1B56C29EBE4796F64736F PUSH13 0x63430008070033000000000000 ",
+							"sourceMap": "169:28:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "66",
+								"totalCost": "12666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 169,
+									"end": 197,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 169,
+									"end": 197,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 169,
+									"end": 197,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 169,
+									"end": 197,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 169,
+									"end": 197,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 169,
+									"end": 197,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 169,
+									"end": 197,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 169,
+									"end": 197,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 169,
+									"end": 197,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 169,
+									"end": 197,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 169,
+									"end": 197,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 169,
+									"end": 197,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 169,
+									"end": 197,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 169,
+									"end": 197,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 169,
+									"end": 197,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 169,
+									"end": 197,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 169,
+									"end": 197,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 169,
+									"end": 197,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 169,
+									"end": 197,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 169,
+									"end": 197,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 169,
+									"end": 197,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a2646970667358221220bf66ac2566d346d2c094d99775caee125a98d7a0a03df7e3d1b56c29ebe4796f64736f6c63430008070033",
+									".code": [
+										{
+											"begin": 169,
+											"end": 197,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 169,
+											"end": 197,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 169,
+											"end": 197,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 169,
+											"end": 197,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 169,
+											"end": 197,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 169,
+											"end": 197,
+											"name": "REVERT",
+											"source": 0
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/Hash.sol\":\"HashFunc\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/Hash.sol\":{\"keccak256\":\"0x1a69d5587df8137c2241fe737cd2b007052b24a051409b0aed6966c12a81b412\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f94cec61bc6492c3ca9f40f41a2f3768aa2d291451121698a14bffd5ec32ed05\",\"dweb:/ipfs/QmVfwoX9Vhegyr1yfuwtxUujzq3swFSbvnNzkQRT3y24gT\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"contracts/Hash.sol": {
+				"ast": {
+					"absolutePath": "contracts/Hash.sol",
+					"exportedSymbols": {
+						"HashFunc": [
+							2
+						]
+					},
+					"id": 3,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".3"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "33:23:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 2,
+							"linearizedBaseContracts": [
+								2
+							],
+							"name": "HashFunc",
+							"nameLocation": "178:8:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [],
+							"scope": 3,
+							"src": "169:28:0",
+							"usedErrors": []
+						}
+					],
+					"src": "33:170:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
